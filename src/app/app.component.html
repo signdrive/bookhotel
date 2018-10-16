@@ -1,3 +1,17 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+<app-sidenave-list></app-sidenave-list>
+    </mat-sidenav>
+
+<mat-sidenav-content>
+<app-header (SideNavigationToggle)="sidenav.toggle()"></app-header>
+<app-tabsnav></app-tabsnav>
+</mat-sidenav-content>
+
+
 <router-outlet></router-outlet>
 <!-- Routed components go here -->
+
+</mat-sidenav-container>
+
 
