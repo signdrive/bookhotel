@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FlexLayoutModule, BREAKPOINT} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule  } from './material.module';
 import { AppComponent } from './app.component';
@@ -57,7 +58,8 @@ import { TabsnavComponent } from './navigation/tabsnav/tabsnav.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-   MaterialModule
+    FlexLayoutModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
