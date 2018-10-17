@@ -17,3 +17,17 @@
   height: 100vh;
 }
 .noscroll { overflow: hidden; }
+.subheading-2{
+ 
+  color: whitesmoke;
+  margin-top: 20px;
+ 
+  
+}
+.headline{
+  
+  color: whitesmoke;
+
+  margin-bottom: 500px;
+  
+}
