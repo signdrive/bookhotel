@@ -1,6 +1,7 @@
 .container {
   height: 100vh;
   background: url(/assets/images/home_beach.jpg) no-repeat;
+
 }
  .book-now-container {
   padding: 35px 115px;
@@ -15,3 +16,4 @@
  .header-container {
   height: 100vh;
 }
+.noscroll { overflow: hidden; }
