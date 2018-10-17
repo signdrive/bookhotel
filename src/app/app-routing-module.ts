@@ -13,11 +13,14 @@ import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
     { path: 'accomodation', component: AccomodationComponent },
-    { path: 'celebration', component: CelebrationsComponent},
+    { path: 'celebrations', component: CelebrationsComponent},
     { path: 'lifestyle', component: LifetstyleComponent},
     { path: 'offers', component: OffersComponent },
     { path: 'weddings', component: WeddingsComponent },
     { path: 'food-beverage', component: FoodBeverageComponent },
+    { path: 'foodandbeverage',
+    redirectTo: 'food-beverage',
+    pathMatch: 'full' },
     { path: 'signin', component: SigninComponent},
     { path: 'signup', component: SignupComponent },
     { path: '', component: HomeComponent }

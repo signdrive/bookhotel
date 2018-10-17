@@ -1,11 +1,13 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-.logo-container{
-    width: 100%;
-    margin-right: 40px;
+
+.logo-container {
+  width: 100%;
+  margin-right: 40px;
 }
-.logo{
-    width: 60px;
+
+.logo {
+  width: 100px;
 }
-nav-toolbar{
-    height: 96px;
+
+mat-toolbar {
+  height: 96px;
 }

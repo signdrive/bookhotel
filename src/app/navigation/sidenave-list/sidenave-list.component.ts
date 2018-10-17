@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sidenave-list',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenave-list.component.css']
 })
 export class SidenaveListComponent implements OnInit {
-
+@Output() closeSideNavigation = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
   }
-
+  onToggleClose() {
+    this.closeSideNavigation.emit();
+  }
 }

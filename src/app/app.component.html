@@ -1,15 +1,18 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav>
-<app-sidenave-list></app-sidenave-list>
+<app-sidenave-list (closeSideNavigation)="sidenav.close()"></app-sidenave-list>
     </mat-sidenav>
 
 <mat-sidenav-content>
 <app-header (SideNavigationToggle)="sidenav.toggle()"></app-header>
 <app-tabsnav></app-tabsnav>
-</mat-sidenav-content>
 
 
-<router-outlet></router-outlet>
+<main>
+    <router-outlet></router-outlet>
+</main>
+    </mat-sidenav-content>
+
 <!-- Routed components go here -->
 
 </mat-sidenav-container>
